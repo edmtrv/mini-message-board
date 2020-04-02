@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-let messages = [
-  { text: 'First message', user: 'Emil', added: new Date() },
-  { text: 'Second message', user: 'User 2', added: new Date() }
-];
+let messages = [];
 
 /* GET home page. */
 router.get('/', function(req, res) {
